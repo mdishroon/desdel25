@@ -14,12 +14,18 @@
                 <li><a href="dd.index.html">Home</a></li>
                 <li><a href="recipeCards.html">Recipes</a></li>
                 <li><a href="#moodboard">Moodboard</a></li>
-                <li><a href="#quizzes">Quizzes</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="quizzeshomepage.html">Quizzes</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-
+    <button id="add-recipe-button" class="submit-button">Add New Recipe</button>
+    <script>
+        document.getElementById("add-recipe-button").addEventListener("click", function() {
+          window.location.href = "addRecipe.html";
+        });
+      </script>
+      
     <h2 class="page-title">Delightful Dessert Recipe Cards</h2>
     <input type="text" id="SearchBar" onkeyup="findRecipe()" placeholder="Search for your favorite dessert..." class="search-bar">
     <div class="recipe-holder">
@@ -548,6 +554,7 @@
     </div>
 </div>
 <script src="search.js"></script>
+<script src="recipe.js"></script>
 
 </body>
 </html>
